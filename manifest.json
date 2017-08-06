@@ -1,0 +1,15 @@
+{
+   "author": "tobydavies",
+   "manifest_version": 2,
+   "name": "AppDDashImageDrop",
+   "permissions": [ "*://*/controller/*" ],
+   "content_scripts": [ {
+       "matches": ["*://*/controller/*"],
+       "js": ["jquery-3.1.1.min.js","content.js"] 
+   }],
+   "version": "1",
+   "web_accessible_resources": [
+       "inject.js"
+   ],
+   "icons": { "128": "AppDIcon.png" }
+}
